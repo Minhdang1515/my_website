@@ -1,0 +1,313 @@
+*{
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+img{
+    width: 100px;
+    height: 100px;
+    image-rendering: pixelated;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #8f6f5a;
+    background-color: #FFEBC1;
+}
+.hleft{
+    margin: 0;
+    padding: 0;
+}
+.hright{
+    margin: 0;
+    padding: 0;
+}
+ul li{
+    font-size: 15px;
+    margin-right: 0px;
+}
+ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+a{
+    text-decoration: none;
+    padding: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    font-style: italic;
+    word-spacing: normal;
+    text-align: right;
+    color: #8E3200;
+}
+a:hover{
+    background-color: #CC704B;
+    border-radius: 10px;
+    transition: all 1s;
+    color: #ffffff;
+}
+p{
+    font-size: 50px;
+    font-family: 'Courier New', Courier, monospace;
+    font-style: normal;
+}
+div#gNav{
+    clear: both;
+}
+div#gNav ul ol{
+    background: #FFEBC1 repeat-x;
+    border: 2px solid #8f6f5a;
+}
+div#gNav ul ol{
+    border-right: solid 2px #8f6f5a;
+    display: inline;
+    padding: 0 10px;
+}
+body{
+    background-image: url(https://bizweb.dktcdn.net/100/408/246/themes/793234/assets/banner_1.png?1645591940267);
+    background-size: cover;
+    background-position-y: -100px
+}
+div#gNav ol{
+    position: relative;
+}
+div#gNav ul.sub-menu{
+     position: absolute;
+     background-color: #DAB88B;
+     display: none;
+     max-width: 100%;
+     margin: 0px;
+}
+div#gNav ul.sub-menu a{
+    padding: 8px 15px;
+    display: inline-block;
+    border-bottom: 1px solid #8f6f5a;
+}
+div#gNav ol:hover>ul.sub-menu{
+    display: block;
+}
+.header-with-search{
+    width: auto;
+    height: 40px;
+    background-color: #FFEBC1;
+    display: flex;
+    align-items: center;
+}
+.header-search{
+    height: 30px;
+    flex: 1;
+    background-color: #ffffff;
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+}
+.header-cart{
+    width: 150px;
+}
+:root{
+    --white: #ffffff;
+    --text-color: rgb(6, 6, 6);
+
+}
+.header-cart-icon:hover{
+    color: var(--white);
+    font-size: 2rem;
+    display: inline;
+    cursor: pointer;
+}
+.header-search-input{
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    font-size: 1.4rem;
+    color: var(--text-color);
+}
+/* i{
+    outline: ivory;
+} */
+.h-search{
+    background-color: #FFEBC1;
+    border: none;
+    height: 25px;
+    border-radius: 3px;
+    width: auto;
+   
+}
+.h-search-icon:hover{
+    font-size: 1.6rem;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+}
+.cotainer{
+    padding: 15px 15px;
+    align-items: center;
+    width: 100%;
+    padding-top: 15px;
+}
+.container img{
+    width: 100%;
+    height: 100%;
+    border: none;
+    image-rendering: pixelated;
+    object-fit: contain;
+    padding: 25px 0px 25px 0px;
+}
+.contaimer-1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #fbfbfb;
+    padding-bottom: 20px;
+}
+.contaimer-1 .p img{
+    width: auto;
+    height: 350px;
+    object-fit: cover;
+    image-rendering: pixelated;
+
+}
+#wrapper{
+    max-width: 1170px;
+    margin: 0 auto;
+    align-items: center;
+}
+.headline{
+    text-align: center;
+}
+#wrapper .headline h3{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 18px;
+    color: #8E3200;
+    padding: 10px 20px;
+    border: 2px solid #8E3200;
+    display: inline-block;
+    font-weight: 600;
+    background-color: #ffffff;
+}
+ul.products{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+ul.products li{
+    flex-basis: 33.33;
+    padding: 15px 15px;
+}
+ul.products li .products-top{
+    position: relative;
+    overflow: hidden;
+}
+ul.products li:hover .products-top .products-thumb img{
+    filter: opacity(80%);
+}
+ul.products li .products-top a.buy-now{
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    background-color: #8E3200;
+    color: #ffffff;
+    padding: 0px -85px 0px 0px;
+    position: absolute;
+    bottom: -25px;
+    width: 100%;
+    transition: 0.25s ease-in-out;
+    opacity: 0.85;
+}
+ul.products li:hover a.buy-now{
+    bottom: 0px;
+    display: block;
+}
+ul.products li .products-top .products-thumb{
+    display: block;
+}
+ul.products li .products-top .products-thumb img{
+    display: block;
+}
+ul.products-item{
+    display: block;
+}
+ul.products li img{
+    max-width: 100%;
+    height: 233.33px;
+    width: 200px;
+}
+ul.products li .products-info a{
+    display: block;
+    align-items: center;
+}
+ul.products li .products-info a.product-name{
+    color: #8E3200;
+    padding: 5px 5px;
+    background-color: #ffffff;
+    font-weight: 600;
+    text-align: center;
+}
+ul.products li .products-info .products-price{
+    padding: 0px;
+    background: #fbfbfb;
+    color: rgb(6, 6, 6);
+    text-align: center;
+    font-weight: 600;
+}
+#wrapper-1{
+    max-width: 1170px;
+    margin: 0 auto;
+    align-items: center;
+}
+#wrapper-1 .headline-1 h3{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 18px;
+    color: #8E3200;
+    padding: 10px 20px;
+    border: 2px solid #8E3200;
+    display: inline-block;
+    font-weight: 600;
+    background-color: #ffffff;
+}
+.headline-1{
+    text-align: center;
+}
+.about{
+    display: block;
+    align-items: center;
+    margin: 10px 0 10px 0;
+}
+h2{
+    font-size: 17px;
+    color: #8f6f5a;
+    margin-bottom: 17px;
+    position: relative;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #fbfbfb;
+    padding: 15px 0px;
+    text-align: center;
+}
+.about p{
+    color: #8f6f5a;
+    background-color: #fbfbfb;
+    font-size: 17px;
+    padding: 15px 15px;
+}
+.contact{
+    width: auto;
+    height: 40px;
+    background-color: #FFEBC1;
+    display: flex;
+    align-items: center;
+}
+.header-contact-input{
+    height: 100%;
+    border: none;
+    outline: none;
+    font-size: 1.4rem;
+    color: var(--text-color);
+    width: 300px;
+}
